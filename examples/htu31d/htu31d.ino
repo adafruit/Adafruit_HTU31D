@@ -22,7 +22,7 @@ void setup() {
   }
   Serial.println("Adafruit HTU31D test");
 
-  if (!htu.begin(0x41)) {
+  if (!htu.begin(0x40)) {
     Serial.println("Couldn't find sensor!");
     while (1);
   }
@@ -30,11 +30,17 @@ void setup() {
 }
 
 void loop() {
-  float temp = htu.readTemperature();
-  float rel_hum = htu.readHumidity();
-  Serial.print("Temp: "); Serial.print(temp); Serial.print(" C");
-  Serial.print("\t\t");
-  Serial.print("Humidity: "); Serial.print(rel_hum); Serial.println(" \%");
+  sensors_event_t humidity, temp;
+  
+  htu.getEvent(&humidity, &temp);// populate temp and humidity objects with fresh data
+
+  Serial.print("Temp: "); 
+  Serial.print(temp.temperature);
+  Serial.println(" C");
+  
+  Serial.print("Humidity: ");
+  Serial.print(humidity.relative_humidity);
+  Serial.println(" \% RH");
 
   // every 5 seconds
   if ((millis() - timestamp) > 5000) {
