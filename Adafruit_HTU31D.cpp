@@ -80,6 +80,7 @@ bool Adafruit_HTU31D::begin(uint8_t i2c_addr, TwoWire *theWire) {
 
 /**
  * Sends a 'reset' request to the HTU31D, followed by a 15ms delay.
+ * @returns True if was able to write the command successfully
  */
 bool Adafruit_HTU31D::reset(void) {
   uint8_t cmd = HTU31D_RESET;
@@ -135,9 +136,9 @@ bool Adafruit_HTU31D::enableHeater(bool en) {
 /**************************************************************************/
 /*!
     @brief  Gets the humidity sensor and temperature values as sensor events
-    @param  humidity Sensor event object that will be populated with humidity
+    @param  humevent Sensor event object that will be populated with humidity
    data
-    @param  temp Sensor event object that will be populated with temp data
+    @param  tempevent Sensor event object that will be populated with temp data
     @returns true if the event data was read successfully
 */
 /**************************************************************************/
@@ -218,6 +219,15 @@ void Adafruit_HTU31D::fillHumidityEvent(sensors_event_t *humidity,
   humidity->type = SENSOR_TYPE_AMBIENT_TEMPERATURE;
   humidity->timestamp = timestamp;
   humidity->relative_humidity = _humidity;
+}
+
+/**
+ * @brief Gets the Adafruit_Sensor object for the HTU31D's humidity sensor
+ *
+ * @return Adafruit_Sensor*
+ */
+Adafruit_Sensor *Adafruit_HTU31D::getHumiditySensor(void) {
+  return humidity_sensor;
 }
 
 /**
