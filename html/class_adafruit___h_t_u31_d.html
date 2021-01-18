@@ -60,6 +60,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_adafruit___h_t_u31_d-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Adafruit_HTU31D Class Reference</div>  </div>
@@ -72,16 +74,64 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0513a8ad4c707928280a6a5bff25fcc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#a0513a8ad4c707928280a6a5bff25fcc2">Adafruit_HTU31D</a> ()</td></tr>
 <tr class="separator:a0513a8ad4c707928280a6a5bff25fcc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336cda47ac483381de41eaffeb82f5eb"><td class="memItemLeft" align="right" valign="top"><a id="a336cda47ac483381de41eaffeb82f5eb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#a336cda47ac483381de41eaffeb82f5eb">~Adafruit_HTU31D</a> (void)</td></tr>
+<tr class="memdesc:a336cda47ac483381de41eaffeb82f5eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTU31D destructor. <br /></td></tr>
+<tr class="separator:a336cda47ac483381de41eaffeb82f5eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a862b8c560de4c6f4e5e027c649debd5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#a862b8c560de4c6f4e5e027c649debd5f">begin</a> (uint8_t i2c_addr=<a class="el" href="_adafruit___h_t_u31_d_8h.html#a844d457058b74713001e84f90f4d65ad">HTU31D_DEFAULT_I2CADDR</a>, TwoWire *theWire=&amp;Wire)</td></tr>
 <tr class="separator:a862b8c560de4c6f4e5e027c649debd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a299d36a32482ef4137bd916d2e307cc0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#a299d36a32482ef4137bd916d2e307cc0">readTemperature</a> (void)</td></tr>
-<tr class="separator:a299d36a32482ef4137bd916d2e307cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeea7c650de4ff9571945c3a160b4aae8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#aeea7c650de4ff9571945c3a160b4aae8">readHumidity</a> (void)</td></tr>
-<tr class="separator:aeea7c650de4ff9571945c3a160b4aae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ec932dd3f4703fac1d90eb50a7daa86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#a8ec932dd3f4703fac1d90eb50a7daa86">reset</a> (void)</td></tr>
-<tr class="separator:a8ec932dd3f4703fac1d90eb50a7daa86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7abf2ad73bd7655a2569bfb47f7849bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#a7abf2ad73bd7655a2569bfb47f7849bc">reset</a> (void)</td></tr>
+<tr class="separator:a7abf2ad73bd7655a2569bfb47f7849bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf29606f7c139b6d565dcec0f6b0789c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#adf29606f7c139b6d565dcec0f6b0789c">readSerial</a> (void)</td></tr>
+<tr class="separator:adf29606f7c139b6d565dcec0f6b0789c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa30c5187e686be2ae8abb065efa27213"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#aa30c5187e686be2ae8abb065efa27213">enableHeater</a> (bool en)</td></tr>
 <tr class="separator:aa30c5187e686be2ae8abb065efa27213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6aebc301a3271e76334287780ca66c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#a8f6aebc301a3271e76334287780ca66c">getEvent</a> (sensors_event_t *humidity, sensors_event_t *temp)</td></tr>
+<tr class="memdesc:a8f6aebc301a3271e76334287780ca66c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the humidity sensor and temperature values as sensor events.  <a href="#a8f6aebc301a3271e76334287780ca66c">More...</a><br /></td></tr>
+<tr class="separator:a8f6aebc301a3271e76334287780ca66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab358c50615adfbb52565c613b0489e9"><td class="memItemLeft" align="right" valign="top">Adafruit_Sensor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#aab358c50615adfbb52565c613b0489e9">getTemperatureSensor</a> (void)</td></tr>
+<tr class="memdesc:aab358c50615adfbb52565c613b0489e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Adafruit_Sensor object for the HTU31D's humidity sensor.  <a href="#aab358c50615adfbb52565c613b0489e9">More...</a><br /></td></tr>
+<tr class="separator:aab358c50615adfbb52565c613b0489e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed61054f42c5690a2305c9b4fa6dc0f3"><td class="memItemLeft" align="right" valign="top">Adafruit_Sensor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#aed61054f42c5690a2305c9b4fa6dc0f3">getHumiditySensor</a> (void)</td></tr>
+<tr class="memdesc:aed61054f42c5690a2305c9b4fa6dc0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Adafruit_Sensor object for the HTU31D's humidity sensor.  <a href="#aed61054f42c5690a2305c9b4fa6dc0f3">More...</a><br /></td></tr>
+<tr class="separator:aed61054f42c5690a2305c9b4fa6dc0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a9c41d613a54341197e266cc717c1dfba"><td class="memItemLeft" align="right" valign="top"><a id="a9c41d613a54341197e266cc717c1dfba"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#a9c41d613a54341197e266cc717c1dfba">_temperature</a></td></tr>
+<tr class="memdesc:a9c41d613a54341197e266cc717c1dfba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last reading's temperature (C) <br /></td></tr>
+<tr class="separator:a9c41d613a54341197e266cc717c1dfba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2316a880c0e8d5723e86e2ad8bf43b12"><td class="memItemLeft" align="right" valign="top"><a id="a2316a880c0e8d5723e86e2ad8bf43b12"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#a2316a880c0e8d5723e86e2ad8bf43b12">_humidity</a></td></tr>
+<tr class="memdesc:a2316a880c0e8d5723e86e2ad8bf43b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last reading's humidity (percent) <br /></td></tr>
+<tr class="separator:a2316a880c0e8d5723e86e2ad8bf43b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ef267835cf2c5b1bd4d797c9ba2259"><td class="memItemLeft" align="right" valign="top"><a id="a74ef267835cf2c5b1bd4d797c9ba2259"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#a74ef267835cf2c5b1bd4d797c9ba2259">_sensorid_humidity</a></td></tr>
+<tr class="memdesc:a74ef267835cf2c5b1bd4d797c9ba2259"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID number for humidity. <br /></td></tr>
+<tr class="separator:a74ef267835cf2c5b1bd4d797c9ba2259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82167c7a880bf9a0fe24c93f86f7bf21"><td class="memItemLeft" align="right" valign="top"><a id="a82167c7a880bf9a0fe24c93f86f7bf21"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#a82167c7a880bf9a0fe24c93f86f7bf21">_sensorid_temp</a></td></tr>
+<tr class="memdesc:a82167c7a880bf9a0fe24c93f86f7bf21"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID number for temperature. <br /></td></tr>
+<tr class="separator:a82167c7a880bf9a0fe24c93f86f7bf21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac063f90194186bcfd334fa63791a7623"><td class="memItemLeft" align="right" valign="top"><a id="ac063f90194186bcfd334fa63791a7623"></a>
+Adafruit_I2CDevice *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#ac063f90194186bcfd334fa63791a7623">i2c_dev</a> = NULL</td></tr>
+<tr class="memdesc:ac063f90194186bcfd334fa63791a7623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to I2C bus interface. <br /></td></tr>
+<tr class="separator:ac063f90194186bcfd334fa63791a7623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd57491fbe6043757b55122fa4ae83cd"><td class="memItemLeft" align="right" valign="top"><a id="afd57491fbe6043757b55122fa4ae83cd"></a>
+<a class="el" href="class_adafruit___h_t_u31_d___temp.html">Adafruit_HTU31D_Temp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#afd57491fbe6043757b55122fa4ae83cd">temp_sensor</a> = NULL</td></tr>
+<tr class="memdesc:afd57491fbe6043757b55122fa4ae83cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temp sensor data object. <br /></td></tr>
+<tr class="separator:afd57491fbe6043757b55122fa4ae83cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab937f3e3f9cf2cfbf4aa3738324c4299"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_adafruit___h_t_u31_d___humidity.html">Adafruit_HTU31D_Humidity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#ab937f3e3f9cf2cfbf4aa3738324c4299">humidity_sensor</a></td></tr>
+<tr class="memdesc:ab937f3e3f9cf2cfbf4aa3738324c4299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Humidity sensor data object.  <a href="#ab937f3e3f9cf2cfbf4aa3738324c4299">More...</a><br /></td></tr>
+<tr class="separator:ab937f3e3f9cf2cfbf4aa3738324c4299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a637e429add5b0e0691149f3edd6eb3e5"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#a637e429add5b0e0691149f3edd6eb3e5">Adafruit_HTU31D_Temp</a></td></tr>
+<tr class="separator:a637e429add5b0e0691149f3edd6eb3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aefd2cbf478fc8ead8f78427fbcfc2c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adafruit___h_t_u31_d.html#a4aefd2cbf478fc8ead8f78427fbcfc2c">Adafruit_HTU31D_Humidity</a></td></tr>
+<tr class="separator:a4aefd2cbf478fc8ead8f78427fbcfc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Driver for the Adafruit HTU31D breakout board. </p>
@@ -141,14 +191,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a299d36a32482ef4137bd916d2e307cc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a299d36a32482ef4137bd916d2e307cc0">&#9670;&nbsp;</a></span>readTemperature()</h2>
+<a id="a7abf2ad73bd7655a2569bfb47f7849bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7abf2ad73bd7655a2569bfb47f7849bc">&#9670;&nbsp;</a></span>reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Adafruit_HTU31D::readTemperature </td>
+          <td class="memname">bool Adafruit_HTU31D::reset </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -156,19 +206,18 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Performs a single temperature conversion in degrees Celsius.</p>
-<dl class="section return"><dt>Returns</dt><dd>a single-precision (32-bit) float value indicating the measured temperature in degrees Celsius or NAN on failure. </dd></dl>
+<p>Sends a 'reset' request to the HTU31D, followed by a 15ms delay. </p><dl class="section return"><dt>Returns</dt><dd>True if was able to write the command successfully </dd></dl>
 
 </div>
 </div>
-<a id="aeea7c650de4ff9571945c3a160b4aae8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeea7c650de4ff9571945c3a160b4aae8">&#9670;&nbsp;</a></span>readHumidity()</h2>
+<a id="adf29606f7c139b6d565dcec0f6b0789c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf29606f7c139b6d565dcec0f6b0789c">&#9670;&nbsp;</a></span>readSerial()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Adafruit_HTU31D::readHumidity </td>
+          <td class="memname">uint32_t Adafruit_HTU31D::readSerial </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -176,27 +225,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Performs a single relative humidity conversion.</p>
-<dl class="section return"><dt>Returns</dt><dd>A single-precision (32-bit) float value indicating the relative humidity in percent (0..100.0%). </dd></dl>
-
-</div>
-</div>
-<a id="a8ec932dd3f4703fac1d90eb50a7daa86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ec932dd3f4703fac1d90eb50a7daa86">&#9670;&nbsp;</a></span>reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Adafruit_HTU31D::reset </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sends a 'reset' request to the HTU31D, followed by a 15ms delay. </p>
+<p>Gets the ID register contents.</p>
+<dl class="section return"><dt>Returns</dt><dd>The 32-bit ID register. </dd></dl>
 
 </div>
 </div>
@@ -222,6 +252,158 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True or false on command write success </dd></dl>
+
+</div>
+</div>
+<a id="a8f6aebc301a3271e76334287780ca66c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f6aebc301a3271e76334287780ca66c">&#9670;&nbsp;</a></span>getEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Adafruit_HTU31D::getEvent </td>
+          <td>(</td>
+          <td class="paramtype">sensors_event_t *&#160;</td>
+          <td class="paramname"><em>humevent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sensors_event_t *&#160;</td>
+          <td class="paramname"><em>tempevent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the humidity sensor and temperature values as sensor events. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">humevent</td><td>Sensor event object that will be populated with humidity data </td></tr>
+    <tr><td class="paramname">tempevent</td><td>Sensor event object that will be populated with temp data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the event data was read successfully </dd></dl>
+
+</div>
+</div>
+<a id="aab358c50615adfbb52565c613b0489e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab358c50615adfbb52565c613b0489e9">&#9670;&nbsp;</a></span>getTemperatureSensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Adafruit_Sensor * Adafruit_HTU31D::getTemperatureSensor </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the Adafruit_Sensor object for the HTU31D's humidity sensor. </p>
+<dl class="section return"><dt>Returns</dt><dd>Adafruit_Sensor* </dd></dl>
+
+</div>
+</div>
+<a id="aed61054f42c5690a2305c9b4fa6dc0f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed61054f42c5690a2305c9b4fa6dc0f3">&#9670;&nbsp;</a></span>getHumiditySensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Adafruit_Sensor * Adafruit_HTU31D::getHumiditySensor </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the Adafruit_Sensor object for the HTU31D's humidity sensor. </p>
+<dl class="section return"><dt>Returns</dt><dd>Adafruit_Sensor* </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a637e429add5b0e0691149f3edd6eb3e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637e429add5b0e0691149f3edd6eb3e5">&#9670;&nbsp;</a></span>Adafruit_HTU31D_Temp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_adafruit___h_t_u31_d___temp.html">Adafruit_HTU31D_Temp</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gives access to private members to Temp data object </p>
+
+</div>
+</div>
+<a id="a4aefd2cbf478fc8ead8f78427fbcfc2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aefd2cbf478fc8ead8f78427fbcfc2c">&#9670;&nbsp;</a></span>Adafruit_HTU31D_Humidity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_adafruit___h_t_u31_d___humidity.html">Adafruit_HTU31D_Humidity</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gives access to private members to Humidity data object </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab937f3e3f9cf2cfbf4aa3738324c4299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab937f3e3f9cf2cfbf4aa3738324c4299">&#9670;&nbsp;</a></span>humidity_sensor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_adafruit___h_t_u31_d___humidity.html">Adafruit_HTU31D_Humidity</a>* Adafruit_HTU31D::humidity_sensor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">      NULL</div></div><!-- fragment -->
+<p>Humidity sensor data object. </p>
 
 </div>
 </div>
