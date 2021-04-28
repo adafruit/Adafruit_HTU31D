@@ -24,7 +24,7 @@
 /** Enable heater */
 #define HTU31D_HEATERON (0x04)
 
-/** Enable heater */
+/** Disable heater */
 #define HTU31D_HEATEROFF (0x02)
 
 /** Reset command. */
