@@ -1,10 +1,10 @@
 {
-    "displayName": HTU31D,
+    "displayName": "HTU31D",
     "i2cAddresses": [ "0x40", "0x41" ],
     "subcomponents": [
     {
       "displayName": "Temperature/Humidity Sensor",
-      "sensorType": "ambient-temp", "humidity",
+      "sensorType": ["ambient-temp", "humidity"],
       "defaultPeriod": 900
     }
   ]
