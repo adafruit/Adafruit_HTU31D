@@ -27,6 +27,8 @@
 
 #include "Adafruit_HTU31D.h"
 
+static uint8_t htu31d_crc(uint16_t value);
+
 /**
  * Constructor for the HTU31D driver.
  */

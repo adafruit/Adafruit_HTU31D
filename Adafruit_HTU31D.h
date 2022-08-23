@@ -30,8 +30,6 @@
 /** Reset command. */
 #define HTU31D_RESET (0x1E)
 
-static uint8_t htu31d_crc(uint16_t value);
-
 class Adafruit_HTU31D;
 
 /**
