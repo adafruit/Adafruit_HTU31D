@@ -114,9 +114,9 @@ uint32_t Adafruit_HTU31D::readSerial(void) {
   serial <<= 8;
   serial |= reply[1];
   serial <<= 8;
-  serial |= reply[3];
+  serial |= reply[2];
   serial <<= 8;
-  serial |= reply[4];
+  serial |= reply[3];
   return serial;
 }
 
@@ -218,7 +218,7 @@ void Adafruit_HTU31D::fillHumidityEvent(sensors_event_t *humidity,
   memset(humidity, 0, sizeof(sensors_event_t));
   humidity->version = sizeof(sensors_event_t);
   humidity->sensor_id = _sensorid_humidity;
-  humidity->type = SENSOR_TYPE_AMBIENT_TEMPERATURE;
+  humidity->type = SENSOR_TYPE_RELATIVE_HUMIDITY;
   humidity->timestamp = timestamp;
   humidity->relative_humidity = _humidity;
 }
