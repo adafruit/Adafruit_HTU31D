@@ -180,7 +180,7 @@ bool Adafruit_HTU31D::getEvent(sensors_event_t *humevent,
   _temperature *= 165;
   _temperature -= 40;
 
-  // Calculate temperature value
+  // Calculate humidity value
   uint16_t raw_hum = thdata[3];
   raw_hum <<= 8;
   raw_hum |= thdata[4];
